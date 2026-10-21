@@ -445,11 +445,13 @@
   ]},
 { "hdr": "7E5", "dbg": true, "cmd": {"22": "2005"}, "freq": 1,
   "signals": [
-    {"id": "SMART_EQA_AUX_V", "path": "Battery", "fmt": { "len": 8, "max": 25.9, "mul": 25.9, "div": 255, "unit": "volts" }, "name": "Auxiliary battery voltage", "suggestedMetric": "starterBatteryVoltage"}
+    {"id": "SMART_EQA_AUX_V",    "path": "Battery", "fmt": { "len": 8,  "max": 25.9,  "mul": 25.9, "div": 255, "unit": "volts"  }, "name": "Auxiliary battery voltage", "suggestedMetric": "starterBatteryVoltage"},
+    {"id": "SMART_7E5_2005_RAW", "path": "Battery", "fmt": { "len": 16, "max": 65535,                          "unit": "scalar" }, "name": "Service 22 2005 raw value"}
   ]},
 { "hdr": "7E5", "dbg": true, "cmd": {"22": "2526"}, "freq": 5,
   "signals": [
-    {"id": "SMART_EQA_HV_COOLANT_T", "path": "Battery", "fmt": { "len": 16, "max": 100, "mul": 1250, "div": 10000, "sign": true, "unit": "celsius" }, "name": "HV battery coolant temperature"}
+    {"id": "SMART_EQA_HV_COOLANT_T", "path": "Battery", "fmt": { "len": 16, "max": 100,   "mul": 1250, "div": 10000, "sign": true, "unit": "celsius" }, "name": "HV battery coolant temperature"},
+    {"id": "SMART_7E5_2526_RAW",     "path": "Battery", "fmt": { "len": 16, "max": 65535,                                          "unit": "scalar"  }, "name": "Service 22 2526 raw value"}
   ]},
 { "hdr": "7E5", "dbg": true, "cmd": {"22": "6050"}, "freq": 1,
   "signals": [
@@ -457,18 +459,18 @@
   ]},
 { "hdr": "7E5", "dbg": true, "cmd": {"22": "6053"}, "freq": 1,
   "signals": [
-    {"id": "SMART_EQA_HV_A", "path": "Battery", "fmt": { "len": 16, "max": 100,                    "div": 10, "sign": true, "unit": "amps" }, "name": "HV battery amperage"},
-    {"id": "SMART_HV_A_V2",  "path": "Battery", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "amps" }, "name": "HV battery amperage"}
+    {"id": "SMART_EQA_HV_A", "path": "Battery", "fmt": { "len": 16, "max": 100,                "div": 10, "sign": true, "unit": "amps" }, "name": "HV battery amperage"},
+    {"id": "SMART_HV_A_V2",  "path": "Battery", "fmt": { "len": 16, "max": 1000, "min": -1000, "div": 10, "sign": true, "unit": "amps" }, "name": "HV battery amperage"}
   ]},
 { "hdr": "7E5", "dbg": true, "cmd": {"22": "6071"}, "freq": 1,
   "signals": [
-    {"id": "SMART_EQA_CNVRTR_REQ_V", "path": "Battery", "fmt": { "len": 16, "max": 100,      "mul": 250, "div": 10000, "unit": "volts" }, "name": "DC converter requested voltage"},
-    {"id": "SMART_CNVRTR_REQ_V",     "path": "Battery", "fmt": { "len": 16, "max": 1638.375, "mul": 250, "div": 10000, "unit": "volts" }, "name": "DC converter requested voltage"}
+    {"id": "SMART_EQA_CNVRTR_REQ_V", "path": "Battery", "fmt": { "len": 16, "max": 100,  "mul": 250, "div": 10000, "unit": "volts" }, "name": "DC converter requested voltage"},
+    {"id": "SMART_CNVRTR_REQ_V",     "path": "Battery", "fmt": { "len": 16, "max": 1000, "mul": 250, "div": 10000, "unit": "volts" }, "name": "DC converter requested voltage"}
   ]},
 { "hdr": "7E5", "dbg": true, "cmd": {"22": "6075"}, "freq": 1,
   "signals": [
-    {"id": "SMART_EQA_HV_V", "path": "Battery", "fmt": { "len": 16, "max": 100,      "mul": 25, "div": 1000, "unit": "volts" }, "name": "HV battery voltage"},
-    {"id": "SMART_HV_V_V2",  "path": "Battery", "fmt": { "len": 16, "max": 1638.375, "mul": 25, "div": 1000, "unit": "volts" }, "name": "HV battery voltage"}
+    {"id": "SMART_EQA_HV_V", "path": "Battery", "fmt": { "len": 16, "max": 100,  "mul": 25, "div": 1000, "unit": "volts" }, "name": "HV battery voltage"},
+    {"id": "SMART_HV_V_V2",  "path": "Battery", "fmt": { "len": 16, "max": 1000, "mul": 25, "div": 1000, "unit": "volts" }, "name": "HV battery voltage"}
   ]},
 { "hdr": "7E5", "dbg": true, "cmd": {"22": "6502"}, "freq": 1,
   "signals": [
