@@ -449,8 +449,9 @@
   ]},
 { "hdr": "7E5", "dbg": true, "cmd": {"22": "2005"}, "freq": 1,
   "signals": [
-    {"id": "SMART_EQA_AUX_V",    "path": "Battery", "fmt": { "len": 8,  "max": 25.9,  "mul": 25.9, "div": 255, "unit": "volts"  }, "name": "Auxiliary battery voltage", "suggestedMetric": "starterBatteryVoltage"},
-    {"id": "SMART_7E5_2005_RAW", "path": "Battery", "fmt": { "len": 16, "max": 65535,                          "unit": "scalar" }, "name": "Service 22 2005 raw value"}
+    {"id": "SMART_EQA_AUX_V",    "path": "Battery", "fmt": { "len": 8,  "max": 25.9,  "mul": 25.9, "div": 255,               "unit": "volts"  }, "name": "Auxiliary battery voltage", "suggestedMetric": "starterBatteryVoltage"},
+    {"id": "SMART_7E5_2005_RAW", "path": "Battery", "fmt": { "len": 16, "max": 65535,                                        "unit": "scalar" }, "name": "Service 22 2005 raw value"},
+    {"id": "SMART_AUX_V",        "path": "Battery", "fmt": { "len": 8,  "max": 25.9,  "mul": 25.9, "div": 255, "nullmin": 0, "unit": "volts"  }, "name": "Auxiliary battery voltage", "suggestedMetric": "starterBatteryVoltage"}
   ]},
 { "hdr": "7E5", "dbg": true, "cmd": {"22": "2526"}, "freq": 5,
   "signals": [
@@ -478,7 +479,8 @@
   ]},
 { "hdr": "7E5", "dbg": true, "cmd": {"22": "6502"}, "freq": 1,
   "signals": [
-    {"id": "SMART_EQA_HV_RANGE", "path": "Trips", "fmt": { "len": 32, "max": 1000, "unit": "kilometers" }, "name": "HV battery remaining distance", "suggestedMetric": "electricRange"}
+    {"id": "SMART_EQA_HV_RANGE", "path": "Trips", "fmt": { "len": 32, "max": 1000, "unit": "kilometers" }, "name": "HV battery remaining distance", "suggestedMetric": "electricRange"},
+    {"id": "SMART_HV_RANGE",     "path": "Trips", "fmt": { "len": 32, "max": 1000, "unit": "kilometers" }, "name": "HV battery remaining distance"}
   ]},
 { "hdr": "7E5", "dbg": true, "cmd": {"22": "6504"}, "freq": 1,
   "signals": [
