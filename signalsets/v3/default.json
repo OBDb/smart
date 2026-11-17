@@ -3,6 +3,10 @@
     { "hdr": "7E1", "type": "transmission" }
   ],
   "commands": [
+{ "hdr": "60A", "rax": "481", "dbg": true, "cmd": {"22": "0001"}, "freq": 30,
+  "signals": [
+    {"id": "SMART_ODO_IC", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
 { "hdr": "61A", "rax": "483", "fcm1": true, "dbg": true, "cmd": {"22": "0223"}, "freq": 60,
   "signals": [
     {"id": "SMART_ED_OBL_PLATE_T",  "path": "Battery", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "nullmax": 215, "unit": "celsius" }, "name": "Charger cooling plate temperature"},
